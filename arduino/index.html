@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LED Controller Interface</title>
+    <style>
+        body { 
+            font-family: sans-serif; 
+            padding: 20px; 
+        }
+        button { 
+            padding: 10px 15px; 
+            margin: 5px; 
+            cursor: pointer;
+        }
+        .led-group {
+            margin-top: 15px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            max-width: 400px;
+        }
+        .led-group h2 {
+            margin: 0 0 10px 0;
+            font-size: 16px;
+        }
+        #status {
+            margin-top: 15px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Microcontroller I/O Control</h1>
+
+    <button id="connectButton">Connect Serial Port</button>
+    
+    <div class="led-group">
+        <h2>Red LED (Pin 10)</h2>
+        <button id="redOn">RED ON</button>
+        <button id="redOff">RED OFF</button>
+    </div>
+
+    <div class="led-group">
+        <h2>Yellow LED (Pin 11)</h2>
+        <button id="yellowOn">YELLOW ON</button>
+        <button id="yellowOff">YELLOW OFF</button>
+    </div>
+
+    <div class="led-group">
+        <h2>Green LED (Pin 12)</h2>
+        <button id="greenOn">GREEN ON</button>
+        <button id="greenOff">GREEN OFF</button>
+    </div>
+
+    <div class="led-group">
+        <h2>Buzzer (Pin 9)</h2>
+        <button id="buzzerOn">BUZZER ON</button>
+        <button id="buzzerOff">BUZZER OFF</button>
+    </div>
+
+    <p id="status">Status: Disconnected</p>
+
+    <script src="serial.js"></script>
+</body>
+</html>
