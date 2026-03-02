@@ -5,5 +5,5 @@ function hitungKubus(sisiA, sisiB){
     hasil = volA + volB;
     return hasil;
 }
-hitungKubus(10, 4);
+console.log(hitungKubus(10, 4));
 console.log(hasil);
